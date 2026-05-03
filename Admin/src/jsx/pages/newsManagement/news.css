@@ -1,0 +1,440 @@
+.news-upload-box {
+  border: 1px dashed #d5d5d5;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9fbff;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  padding: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.thumbnail-upload,
+.gallery-upload {
+  width: 150px;
+  height: 150px;
+}
+
+.news-upload-box:hover {
+  border-color: #3b7ddd;
+  background-color: #f0f4ff;
+}
+
+.news-upload-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.upload-icon-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.upload-icon-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(59, 125, 221, 0.8);
+  color: white;
+  padding: 12px;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.news-upload-box:hover .upload-icon-overlay {
+  opacity: 1;
+}
+
+.news-preview-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.custom-editor-wrapper {
+  border: 1px solid #d5d5d5;
+  border-radius: 10px;
+  padding: 6px;
+}
+
+/* Gallery Styles */
+.gallery-upload-box {
+  border: 1px dashed #d5d5d5;
+  border-radius: 10px;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9fbff;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  padding: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.gallery-upload-box:hover {
+  border-color: #3b7ddd;
+  background-color: #f0f4ff;
+}
+
+.gallery-preview-container {
+  min-height: 120px;
+  border: 1px dashed #d5d5d5;
+  border-radius: 10px;
+  padding: 12px;
+  background-color: #f9fbff;
+}
+
+.gallery-preview-item {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 2px solid #e0e0e0;
+  transition: all 0.3s ease;
+}
+
+.gallery-preview-item:hover {
+  border-color: #3b7ddd;
+  transform: scale(1.05);
+}
+
+.gallery-preview-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-remove-btn {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  background-color: rgba(220, 53, 69, 0.9);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  font-size: 12px;
+  transition: all 0.3s ease;
+  pointer-events: auto;
+}
+
+.gallery-remove-btn:hover {
+  background-color: #dc3545;
+  transform: scale(1.1);
+}
+
+/* Author Profile Upload */
+.author-profile-upload {
+  border: 1px dashed #d5d5d5;
+  border-radius: 12px;
+  min-height: 170px;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9fbff;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  padding: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.author-profile-upload:hover {
+  border-color: #3b7ddd;
+  background-color: #f0f4ff;
+}
+
+.author-profile-preview {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Social Media Links */
+.social-links-container {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #fafafa;
+}
+
+.social-link-item {
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+.social-link-item:hover {
+  border-color: #3b7ddd;
+  box-shadow: 0 2px 4px rgba(59, 125, 221, 0.1);
+}
+
+.author-social-links {
+  border-radius: 16px;
+  padding: 20px;
+  background: #fff;
+  box-shadow: inset 0 0 0 1px #eef0f7;
+}
+
+.single-social-link:not(:last-child) {
+  border-bottom: 1px solid #f1f3f9;
+  padding-bottom: 12px;
+}
+
+.social-link-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: #fff;
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  box-shadow: 0 4px 10px rgba(59, 118, 239, 0.15);
+  flex-shrink: 0;
+}
+
+.social-link-icon.twitter {
+  background: linear-gradient(135deg, #1da1f2, #0c8bdc);
+}
+.social-link-icon.facebook {
+  background: linear-gradient(135deg, #1877f2, #1454c4);
+}
+.social-link-icon.instagram {
+  background: linear-gradient(135deg, #f56040, #f77737);
+}
+.social-link-icon.linkedin {
+  background: linear-gradient(135deg, #0a66c2, #004182);
+}
+.social-link-icon.youtube {
+  background: linear-gradient(135deg, #ff0000, #cc0000);
+}
+
+.social-link-input {
+  flex: 1;
+  height: 46px;
+  border-radius: 10px;
+  border: 1px solid #dbe2f1;
+  box-shadow: inset 0 1px 2px rgba(15, 23, 42, 0.05);
+}
+
+.social-link-input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+}
+
+@media (max-width: 576px) {
+  .author-card {
+    max-width: 100% !important;
+    margin: 0 16px;
+  }
+  .author-card .card-body {
+    padding: 16px !important;
+  }
+  .author-social-links .row > div {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .single-social-link {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .single-social-link .social-link-icon {
+    width: 36px;
+    height: 36px;
+  }
+  .single-social-link .social-link-icon i {
+    font-size: 14px;
+  }
+  .social-link-input {
+    width: 100%;
+  }
+  .author-profile-upload {
+    min-height: 120px;
+    padding: 12px;
+  }
+  .btn.btn-light {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  .d-flex.gap-2.justify-content-end {
+    flex-direction: column !important;
+    gap: 8px !important;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .gallery-upload-box {
+    min-height: 100px;
+  }
+
+  .author-profile-upload {
+    min-height: 140px;
+  }
+
+  .news-upload-box {
+    min-height: 150px;
+  }
+}
+
+/* Input group with icon button */
+.input-group .btn-outline-secondary {
+  border-left: 0;
+}
+
+.input-group .btn-outline-primary {
+  margin-left: 4px;
+}
+
+/* Calendar and Clock icons in input groups */
+.input-group-text {
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
+  color: #495057;
+}
+
+.input-group-text i {
+  font-size: 14px;
+}
+
+/* Ensure all buttons are clickable */
+.btn {
+  position: relative;
+  z-index: 5;
+  pointer-events: auto;
+}
+
+.input-group .btn {
+  position: relative;
+  z-index: 5;
+  pointer-events: auto;
+}
+
+/* Prevent file input from blocking other elements outside upload boxes */
+.news-upload-box,
+.gallery-upload-box,
+.author-profile-upload {
+  position: relative;
+  z-index: 1;
+}
+
+.news-upload-box input[type="file"],
+.gallery-upload-box input[type="file"],
+.author-profile-upload input[type="file"] {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+  pointer-events: auto;
+}
+
+/* Ensure form buttons work */
+form .btn,
+.card-body .btn {
+  position: relative;
+  z-index: 10;
+  pointer-events: auto;
+}
+
+.author-card-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  z-index: 1200;
+  overflow-y: auto; /* allow scrolling if modal content overflows viewport */
+}
+
+.author-card {
+  width: 100%;
+  max-width: 560px;
+  border: 0;
+  border-radius: 18px;
+  box-shadow: 0 25px 80px rgba(15, 23, 42, 0.25);
+  animation: authorCardFade 0.2s ease-in-out;
+  max-height: 90vh; /* limit height to viewport height to avoid overflow */
+  display: flex;
+  flex-direction: column;
+}
+
+.author-card .card-header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  flex-shrink: 0;
+}
+
+.author-card .card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 28px;
+  overflow-y: auto; /* enable scrolling inside card body */
+  flex-grow: 1;
+  min-height: 0; /* required for proper flexbox behavior */
+}
+
+.author-card .btn-light {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes authorCardFade {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
